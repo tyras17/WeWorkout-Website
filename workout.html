@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0"> <!-- this will display the website to which it fits the users screen.-->
+    <title>Workout </title>
+    <Link rel="stylesheet" href="workout.css">
+    <Link rel="stylesheet" href="stylesheet.less">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.jsLinks to an external site."></script>
+</head>
+<section class="header">
+    <nav>
+        <a href="responsivePage.html"><img src="images/dumbell.jpg"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-window-close" onclick="hideMenu()"></i>
+                <ul>
+                <li><a href="./WeWorkout.html">HOME</a></li>
+                    <li><a href="./blog.html">BLOG</a></li>
+                    <li><a href="./workout.html">WORKOUT</a></li>
+                    <li><a href="./create.html">CREATE</a></li>
+                    <li><a href="./calculate.html">CALCULATION</a></li>
+                    <li><a href="./login.html">LOG IN</a></li>>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+    </nav>
+    <body>
+        <header>
+          <h1>Full Body Workout</h1>
+        </header>
+        <main>
+          <section>
+            <h2>Warm Up</h2>
+            <ul>
+              <li>5 minutes on the elliptical</li>
+              <li>20 jumping jacks</li>
+              <li>20 high knees</li>
+              <li>20 butt kicks</li>
+              <li>20 arm circles</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Strength Training</h2>
+            <table>
+              <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+              </tr>
+              <tr>
+                <td>Squats</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Bench Press</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Deadlifts</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Shoulder Press</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+            </table>
+          </section>
+          <section>
+            <h2>Cardio</h2>
+            <ul>
+              <li>20 minutes on the treadmill</li>
+            </ul>
+          </section>
+        </main>
+
+        <header>
+          <h1>Upper Body Workout</h1>
+        </header>
+        <main>
+          <section>
+            <h2>Warm Up</h2>
+            <ul>
+              <li>10 Arm circles</li>
+              <li>10 Shoulder Rolls</li>
+              <li>20 Wall Push-Ups</li>
+              <li>20 Arms Swings</li>
+              <li>20 Chest Stretch</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Strength Training</h2>
+            <table>
+              <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+              </tr>
+              <tr>
+                <td>Push Ups</td>
+                <td>3</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Dumbell Bench Press</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Pull-ups</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Seated dumbbell shoulder press</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+            </table>
+          </section>
+        </main>
+        <header>
+          <h1>Lower Body Workout</h1>
+        </header>
+        <main>
+          <section>
+            <h2>Warm Up</h2>
+            <ul>
+              <li>10 Lunges</li>
+              <li>10 Side Lunges</li>
+              <li>20 Leg swings. 10 each side.</li>
+              <li>20 High Knees</li>
+              <li>20 Side Shuffle</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Strength Training</h2>
+            <table>
+              <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+              </tr>
+              <tr>
+                <td>Split squats</td>
+                <td>3</td>
+                <td>6x6</td>
+              </tr>
+              <tr>
+                <td>Squats</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Leg Extensions</td>
+                <td>3</td>
+                <td>8x8</td>
+              </tr>
+              <tr>
+                <td>Glute Bridges</td>
+                <td>3</td>
+                <td>15</td>
+              </tr>
+            </table>
+          </section>
+        </main>
+
+        <header>
+          <h1>Upper Body Workout</h1>
+        </header>
+        <main>
+          <section>
+            <h2>Warm Up</h2>
+            <ul>
+              <li>10 Arm circles</li>
+              <li>10 Shoulder Rolls</li>
+              <li>20 Wall Push-Ups</li>
+              <li>20 Arms Swings</li>
+              <li>20 Chest Stretch</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Strength Training</h2>
+            <table>
+              <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+              </tr>
+              <tr>
+                <td>Push Ups</td>
+                <td>3</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Dumbell Bench Press</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Pull-ups</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Seated dumbbell shoulder press</td>
+                <td>3</td>
+                <td>12</td>
+              </tr>
+            </table>
+          </section>
+        </main>
+
+        <header>
+          <h1>Ab Workout</h1>
+        </header>
+        <main>
+          <section>
+            <h2>Warm Up</h2>
+            <ul>
+              <li>1 minute planks</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Exercises</h2>
+            <table>
+              <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Time</th>
+              </tr>
+              <tr>
+                <td>Bicycles</td>
+                <td>3</td>
+                <td>1 min</td>
+              </tr>
+              <tr>
+                <td>Mountain Climbers</td>
+                <td>3</td>
+                <td>2 min</td>
+              </tr>
+              <tr>
+                <td>Crunches</td>
+                <td>3</td>
+                <td>30 reps</td>
+              </tr>
+              <tr>
+                <td>Russian twists</td>
+                <td>3</td>
+                <td>30</td>
+              </tr>
+            </table>
+          </section>
+        </main>
+
+
+        <footer>
+          <p>&copy; 2023 WeWorkout App</p>
+        </footer>
+        <script src="app.js"></script>
+      </body>
+</html>

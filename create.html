@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0"> <!-- this will display the website to which it fits the users screen.-->
+    <title>We Workout </title>
+    <Link rel="stylesheet" href="create.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.jsLinks to an external site."></script>
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="WeWorkout.html"><img src="images/dumbell.jpg"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-window-close" onclick="hideMenu()"></i>
+                <ul>
+                <li><a href="./WeWorkout.html">HOME</a></li>
+                    <li><a href="./blog.html">BLOG</a></li>
+                    <li><a href="./workout.html">WORKOUT</a></li>
+                    <li><a href="./create.html">CREATE</a></li>
+                    <li><a href="./calculate.html">CALCULATION</a></li>
+                    <li><a href="./login.html">LOG IN</a></li>>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+    </nav>
+    </section>
+    </body>
+    <body>
+        <div class="container">
+            <h1>Workout Blog</h1>
+    
+            <!-- Blog post form -->
+            <form action="create_post.php" method="POST">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+    
+                <label for="content">Content:</label>
+                <textarea id="content" name="content" required></textarea>
+    
+                <button type="submit">Create Post</button>
+            </form>
+    
+            <hr>
+    
+            <!-- Blog post display -->
+            <div class="blog-posts">
+                <h2>Recent Posts</h2>
+    
+                <!-- Display recent posts here -->
+                <?php
+                    // code to display recent posts from the database
+                ?>
+            </div>
+        </div>
+    </body>
+    </html>
+    
